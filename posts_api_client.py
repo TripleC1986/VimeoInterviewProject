@@ -36,3 +36,10 @@ class PostsApiClient:
         and returns a response object
         """
         return self.session.get(self.base_url+"posts")
+
+    def create_a_post(self, post_data: dict):
+
+        return self.session.post(self.base_url+"posts", data=post_data)
+
+
+
